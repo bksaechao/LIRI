@@ -16,22 +16,24 @@ var command = process.argv[2];
 var input = process.argv.slice(3).join(" ")
 
 // Switch statement to handle commands.
-switch (command) {
-    case "concert-this":
-        concertThis();
-        break;
-    case "spotify-this-song":
-        spotifyThis();
-        break;
-    case "movie-this":
-        movieThis();
-        break;
-    case "do-what-it-says":
-        doThis();
-        break;
+function doRandom(command, input) {
+    switch (command) {
+        case "concert-this":
+            concertThis(input);
+            break;
+        case "spotify-this-song":
+            spotifyThis(input);
+            break;
+        case "movie-this":
+            movieThis(input);
+            break;
+        case "do-what-it-says":
+            doThis();
+            break;
+    }
 }
 
-function concertThis() {
+function concertThis(input) {
     var artist = input;
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
     // Grabbing data from the bandsintown api and displaying it on the node terminal.
@@ -63,7 +65,7 @@ function concertThis() {
     });
 };
 
-function spotifyThis() {
+function spotifyThis(input) {
     // Defaults input to "The Sign."
     if (!input) {
         input = "The Sign"
@@ -97,7 +99,7 @@ function spotifyThis() {
     })
 }
 
-function movieThis() {
+function movieThis(input) {
     var movieName = input
     var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
     // Defaults input to "Mr. Nobody."
@@ -144,5 +146,13 @@ function movieThis() {
 }
 
 function doThis() {
-
+    fs.readFile("random.txt", "utf8", function (error, data) {
+        if (error) {
+            return console.log(error)
+        }
+        dataArr = data.split(",");
+        doRandom(dataArr[0], dataArr[1]);
+    })
 }
+
+doRandom(command, input);
