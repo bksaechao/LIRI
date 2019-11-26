@@ -34,13 +34,21 @@ switch (command) {
 function concertThis() {
     var artist = input;
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-
+    // Grabbing data from the bandsintown api and displaying it to the node terminal
     axios.get(queryURL).then(response => {
         console.log("Venu: " + response.data[0].venue.name + "\n");
         console.log("Location: " + response.data[0].venue.city + "\n");
         console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
 
-        var logConcert = "======Concert Start======" + "\nArtist: " + artist + "\nVenue: " + response.data[0].venue.name + "\nLocation: " + response.data[0].venue.city + "\n Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n======Concert End======" + "\n";
+        // Logging concert data to the log file
+        var logConcert =
+            "======Concert Start======" +
+            "\nArtist: " + artist +
+            "\nVenue: " + response.data[0].venue.name +
+            "\nLocation: " + response.data[0].venue.city +
+            "\n Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") +
+            "\n======Concert End======" + "\n";
+
         fs.appendFile("log.txt", logConcert, function (err) {
             if (err) {
                 console.log(err);
@@ -56,10 +64,11 @@ function concertThis() {
 };
 
 function spotifyThis() {
+    // Defaults input to "The Sign"
     if (!input) {
         input = "The Sign";
     };
-
+    // Grabbing data from the spotify api and displaying it to the node terminal
     spotify.search({ type: 'track', query: input }, function (err, data) {
         if (err) {
             return console.log("Error: " + err);
@@ -68,6 +77,23 @@ function spotifyThis() {
         console.log("Song Title: " + data.tracks.items[0].name + "\n");
         console.log("Preview Link: " + data.tracks.items[0].href + "\n");
         console.log("Album: " + data.tracks.items[0].album.name + "\n");
+
+        // Logging spotify data to the log file
+        var logSpotify =
+            "======Spotify Start======" +
+            "\nArtist(s): " + data.tracks.items[0].album.artists[0].name +
+            "\nSong Title: " + data.tracks.items[0].name +
+            "\nPreview Link: " + data.tracks.items[0].href +
+            "\nAlbum: " + data.tracks.items[0].album.name +
+            "\n======Spotify End======" + "\n";
+
+        fs.appendFile(log.txt, logSpotify, function (err) {
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("Spotify Logged");
+            }
+        })
     })
 }
 
