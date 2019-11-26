@@ -11,7 +11,7 @@ const moment = require("moment");
 // First argument will be the command(i.e "concert-this" "spotify-this-song" etc..).
 // Second argument will be the specified content being queried.
 var command = process.argv[2];
-var input = process.argv[3];
+var input = process.argv.slice(3).join(" ")
 
 // Switch statement to handle commands.
 
@@ -37,7 +37,16 @@ function concertThis() {
     axios.get(queryURL).then(response => {
         console.log("Venu: " + response.data[0].venue.name + "\n");
         console.log("Location: " + response.data[0].venue.city + "\n");
-        console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY"));
+        console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
+
+        var logConcert = "======Concert Start======" + "\nArtist: " + artist + "\nVenue: " + response.data[0].venue.name + "\nLocation: " + response.data[0].venue.city + "\n Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n======Concert End======" + "\n";
+        fs.appendFile("log.txt", logConcert, function (err) {
+            if (err) {
+                console.log(err);
+            } else {
+                console.log("Concert Logged")
+            }
+        })
     }).catch(error => {
         if (error.response) {
             // The request was made and the server responded with a status code
