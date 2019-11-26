@@ -9,12 +9,13 @@ const moment = require("moment");
 
 // Taking 2 arguments in the node application.
 // First argument will be the command(i.e "concert-this" "spotify-this-song" etc..).
-// Second argument will be the specified content being queried.
+// Second argument will be the input(i.e "artist" "song title" "movie title" etc..).
 var command = process.argv[2];
+// Extracts a copy of the third array element and concatenates higher index arguments.
+// This accounts for multiple spaced arguments.
 var input = process.argv.slice(3).join(" ")
 
 // Switch statement to handle commands.
-
 switch (command) {
     case "concert-this":
         concertThis();
@@ -48,27 +49,27 @@ function concertThis() {
             }
         })
     }).catch(error => {
-        if (error.response) {
-            // The request was made and the server responded with a status code
-            // that falls out of the range of 2xx
-            console.log(error.response.data);
-            console.log(error.response.status);
-            console.log(error.response.headers);
-        } else if (error.request) {
-            // The request was made but no response was received
-            // `error.request` is an object that comes back with details pertaining to the error that occurred.
-            console.log(error.request);
-        } else {
-            // Something happened in setting up the request that triggered an Error
-            console.log("Error", error.message);
+        if (error) {
+            console.log(error);
         }
-        console.log(error.config);
     });
 };
 
 function spotifyThis() {
-    console.log('hello');
-};
+    if (!input) {
+        input = "The Sign";
+    };
+
+    spotify.search({ type: 'track', query: input }, function (err, data) {
+        if (err) {
+            return console.log("Error: " + err);
+        }
+        console.log("Artist(s): " + data.tracks.items[0].album.artists[0].name + "\n");
+        console.log("Song Title: " + data.tracks.items[0].name + "\n");
+        console.log("Preview Link: " + data.tracks.items[0].href + "\n");
+        console.log("Album: " + data.tracks.items[0].album.name + "\n");
+    })
+}
 
 function movieThis() {
 
