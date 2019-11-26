@@ -43,7 +43,7 @@ function concertThis() {
         // Logging concert data to the log file
         var logConcert =
             "======Concert Start======" +
-            "\nArtist: " + artist +
+            "\nArtist(s): " + artist +
             "\nVenue: " + response.data[0].venue.name +
             "\nLocation: " + response.data[0].venue.city +
             "\n Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") +
@@ -87,7 +87,7 @@ function spotifyThis() {
             "\nAlbum: " + data.tracks.items[0].album.name +
             "\n======Spotify End======" + "\n";
 
-        fs.appendFile(log.txt, logSpotify, function (err) {
+        fs.appendFile("log.txt", logSpotify, function (err) {
             if (err) {
                 console.log(err)
             } else {

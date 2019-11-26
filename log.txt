@@ -10,3 +10,9 @@ Venue: Golden 1 Center
 Location: Sacramento
  Date: 11-27-2019
 ======Concert End======
+======Spotify Start======
+Artist(s): DEAN
+Song Title: dayfly
+Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
+Album: dayfly
+======Spotify End======
