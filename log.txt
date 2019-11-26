@@ -16,3 +16,15 @@ Song Title: dayfly
 Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
 Album: dayfly
 ======Spotify End======
+======Spotify Start======
+Artist(s): Harry Styles
+Song Title: Sign of the Times
+Preview Link: https://api.spotify.com/v1/tracks/5Ohxk2dO5COHF1krpoPigN
+Album: Harry Styles
+======Spotify End======
+======Spotify Start======
+Artist(s): Harry Styles
+Song Title: Sign of the Times
+Preview Link: https://api.spotify.com/v1/tracks/5Ohxk2dO5COHF1krpoPigN
+Album: Harry Styles
+======Spotify End======

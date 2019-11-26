@@ -34,13 +34,13 @@ switch (command) {
 function concertThis() {
     var artist = input;
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
-    // Grabbing data from the bandsintown api and displaying it to the node terminal
+    // Grabbing data from the bandsintown api and displaying it on the node terminal.
     axios.get(queryURL).then(response => {
         console.log("Venu: " + response.data[0].venue.name + "\n");
         console.log("Location: " + response.data[0].venue.city + "\n");
         console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
 
-        // Logging concert data to the log file
+        // Logging concert data to the log file.
         var logConcert =
             "======Concert Start======" +
             "\nArtist(s): " + artist +
@@ -64,11 +64,11 @@ function concertThis() {
 };
 
 function spotifyThis() {
-    // Defaults input to "The Sign"
+    // Defaults input to "The Sign."
     if (!input) {
-        input = "The Sign";
+        input = "The Sign"
     };
-    // Grabbing data from the spotify api and displaying it to the node terminal
+    // Grabbing data from the spotify api and displaying it on the node terminal
     spotify.search({ type: 'track', query: input }, function (err, data) {
         if (err) {
             return console.log("Error: " + err);
@@ -78,7 +78,7 @@ function spotifyThis() {
         console.log("Preview Link: " + data.tracks.items[0].href + "\n");
         console.log("Album: " + data.tracks.items[0].album.name + "\n");
 
-        // Logging spotify data to the log file
+        // Logging spotify data to the log file.
         var logSpotify =
             "======Spotify Start======" +
             "\nArtist(s): " + data.tracks.items[0].album.artists[0].name +
@@ -98,7 +98,25 @@ function spotifyThis() {
 }
 
 function movieThis() {
+    var movieName = input
+    var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
+    // Defaults input to "Mr. Nobody."
+    if (!movieName) {
+        movieName = "Mr. Nobody"
+    };
 
+    // Grabbing data from OMDB API and displaying it on the node terminal
+    axios.get(queryURL).then(response => {
+        console.log("Title: " + response.data.Title + "\n");
+        console.log("Release Year: " + response.data.Year + "\n");
+        console.log("IMDB Rating: " + response.data.imdbRating + "\n");
+        console.log("Rotten Tomatoes Rating: " + response.data.Ratings[1].Value + "\n");
+        console.log("Country Produced: " + response.data.Country + "\n");
+        console.log("Language: " + response.data.Language + "\n");
+        console.log("Plot: " + response.data.Plot + "\n");
+        console.log("Actors: " + response.data.Actors + "\n");
+
+    })
 }
 
 function doThis() {
