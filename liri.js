@@ -47,7 +47,7 @@ function concertThis() {
             "\nVenue: " + response.data[0].venue.name +
             "\nLocation: " + response.data[0].venue.city +
             "\n Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") +
-            "\n======Concert End======" + "\n";
+            "\n======Concert End======" + "\n\n";
 
         fs.appendFile("log.txt", logConcert, function (err) {
             if (err) {
@@ -85,7 +85,7 @@ function spotifyThis() {
             "\nSong Title: " + data.tracks.items[0].name +
             "\nPreview Link: " + data.tracks.items[0].href +
             "\nAlbum: " + data.tracks.items[0].album.name +
-            "\n======Spotify End======" + "\n";
+            "\n======Spotify End======" + "\n\n";
 
         fs.appendFile("log.txt", logSpotify, function (err) {
             if (err) {
@@ -116,7 +116,31 @@ function movieThis() {
         console.log("Plot: " + response.data.Plot + "\n");
         console.log("Actors: " + response.data.Actors + "\n");
 
-    })
+        // Logging movie data
+        var logMovie =
+            "======Movie Start======" +
+            "\nTitle: " + response.data.Title +
+            "\nRelease Year: " + response.data.Year +
+            "\nIMDB Rating: " + response.data.imdbRating +
+            "\nRotten Tomatoes Rating: " + response.data.Ratings[1].Value +
+            "\nCountry Produced: " + response.data.Country +
+            "\nLanguage: " + response.data.Language +
+            "\nPlot: " + response.data.Plot +
+            "\nActors: " + response.data.Actors +
+            "\n======Movie End======" + "\n\n";
+
+        fs.appendFile("log.txt", logMovie, function (err) {
+            if (err) {
+                console.log(err)
+            } else {
+                console.log("Movie Logged")
+            }
+        })
+    }).catch(error => {
+        if (error) {
+            console.log(error);
+        }
+    });
 }
 
 function doThis() {
