@@ -104,7 +104,7 @@ function movie(input) {
     var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
     // Defaults input to "Mr. Nobody."
     if (!movieName) {
-        movieName = "Mr. Nobody"
+        movieName = "Alita";
     };
 
     // Grabbing data from OMDB API and displaying it on the node terminal

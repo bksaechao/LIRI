@@ -29,3 +29,50 @@ Song Title: I Want It That Way
 Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
 Album: The Hits--Chapter One
 ======Spotify End======
+
+======Spotify Start======
+Artist(s): Backstreet Boys
+Song Title: I Want It That Way
+Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
+Album: The Hits--Chapter One
+======Spotify End======
+
+======Movie Start======
+Title: Alita: Battle Angel
+Release Year: 2019
+IMDB Rating: 7.4
+Rotten Tomatoes Rating: 61%
+Country Produced: USA
+Language: English, Spanish
+Plot: A deactivated cyborg is revived, but cannot remember anything of her past life and goes on a quest to find out who she is.
+Actors: Rosa Salazar, Christoph Waltz, Jennifer Connelly, Mahershala Ali
+======Movie End======
+
+======Spotify Start======
+Artist(s): DEAN
+Song Title: dayfly
+Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
+Album: dayfly
+======Spotify End======
+
+======Spotify Start======
+Artist(s): DEAN
+Song Title: dayfly
+Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
+Album: dayfly
+======Spotify End======
+
+======Spotify Start======
+Artist(s): DEAN
+Song Title: dayfly
+Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
+Album: dayfly
+======Spotify End======
+
+======Spotify Start======
+Artist(s): DEAN
+Song Title: dayfly
+Preview Link: https://api.spotify.com/v1/tracks/2AA1f7utyvXpmtKsEvp5lz
+Album: dayfly
+======Spotify End======
+
