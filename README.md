@@ -4,7 +4,7 @@
 
 # How to use it
 *<strong>Pre-steps</strong>*
-*<p>(since this app uses the node-spotify-api, users must sign up for their own spotify account and developer account (two separate accounts) and input the developer credentials in a hidden .env file. The steps are listed below)</p>*
+<p>(since this app uses the node-spotify-api, users must sign up for their own spotify account and developer account (two separate accounts) and input the developer credentials in a hidden .env file. The steps are listed below)</p>
 <ol>
   <li>Visit https://developer.spotify.com/my-applications/#!/
   <li>Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
