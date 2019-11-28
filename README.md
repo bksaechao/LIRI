@@ -37,3 +37,19 @@
 # Bonus
 <p>The GIF below demonstrates the bonus challenge. When the movie command is called, the data is populated in the terminal while also logging the information in the log.txt file.</p>
 <img src="images/bonusdemo.gif" alt="bonusGif" height="200" width="500">
+
+# Technologies
+* node.js
+* packages:
+  * axios
+  * dontenv
+  * moment
+  * node-spotify-api
+* fs module
+* functions/methods
+  * require();
+  * switch statement
+  * if statements
+  * .appendFile();
+  * .slice()/.join()
+  * .catch()
