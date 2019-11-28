@@ -22,11 +22,11 @@
 1. concert-this<br>
   <img src="images/concert-command.png" alt="conCom" height="100" width ="200">
   
-1. spotify-this-song
+2. spotify-this-song
   * (see Gif above)
 
-1. movie-this<br>
+3. movie-this<br>
   <img src="images/movie-command.png" alt="movCom" height="200" width ="800">
   
-1. do-what-it-says<br>
+4. do-what-it-says<br>
   <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
