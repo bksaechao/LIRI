@@ -4,7 +4,7 @@
 
 # How to use it
 *<strong>Pre-steps</strong>*
-<p>(since this app uses the node-spotify-api, users must sign up for their own spotify account and developer account (two separate accounts) and input the developer credentials in a hidden .env file. The steps are listed below)</p>
+<p>(since this app uses the node-spotify-api, users must sign up for their own spotify account and developer account (two separate accounts) and input their developer credentials in a hidden .env file. The steps are listed below)</p>
 <ol>
   <li>Visit https://developer.spotify.com/my-applications/#!/
   <li>Either login to your existing Spotify account or create a new one (a free account is fine) and log in.
@@ -14,3 +14,12 @@
   <li>You will also need to run "npm i" without the quotes in the node terminal to install the required packages to properly run this app.
 </ol>
 <img src="images/envfile.png" alt="env" height="200" width="350">
+
+## LIRI in action
+<p>LIRI can take in one of four commands in the node terminal:</p>
+
+*(The following images show how to input the commands in the command line and the information that will be displayed)*
+1. concert-this
+1. spotify-this-song
+1. movie-this
+1. do-what-it-says
