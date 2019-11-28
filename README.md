@@ -32,7 +32,7 @@
   
 4. **do-what-it-says**<br>
   <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
-  <p>This command is set to read the command outlined in the random.txt file. By changing the command name and the arist/movie/song, the user can change what this command will output.</p>
+  <p>This command is set to read the command defined in the random.txt file. By changing the command name and the arist/movie/song, the user can change what this command will output.</p>
 
 # Bonus
 <p>The GIF below demonstrates the bonus challenge. When the movie command is called, the data is populated in the terminal while also logging the information in the log.txt file.</p>
