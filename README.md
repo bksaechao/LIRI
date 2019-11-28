@@ -21,16 +21,16 @@
 <p>LIRI can take in one of four commands in the node terminal:</p>
 
 *<p>(The following images show how to input the commands in the command line and the information that will be displayed)</p>*
-1. concert-this<br>
+1. **concert-this**<br>
   <img src="images/concert-command.png" alt="conCom" height="100" width ="200">
   
-2. spotify-this-song
+2. **spotify-this-song**
   * (see Gif above)
 
-3. movie-this<br>
+3. **movie-this**<br>
   <img src="images/movie-command.png" alt="movCom" height="200" width ="800">
   
-4. do-what-it-says<br>
+4. **do-what-it-says**<br>
   <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
   <p>This command is set to read the command outlined in the random.txt file. By changing the command name and the arist/movie/song, the user can change what this command will output.</p>
 
