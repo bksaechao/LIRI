@@ -19,7 +19,6 @@
 <p>LIRI can take in one of four commands in the node terminal:</p>
 
 *<p>(The following images show how to input the commands in the command line and the information that will be displayed)</p>*
-
 1. concert-this<br>
   <img src="images/concert-command.png" alt="conCom" height="100" width ="200">
 1. spotify-this-song
