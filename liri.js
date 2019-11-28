@@ -38,6 +38,7 @@ function concert(input) {
     var queryURL = "https://rest.bandsintown.com/artists/" + artist + "/events?app_id=codingbootcamp";
     // Grabbing data from the bandsintown api and displaying it on the node terminal.
     axios.get(queryURL).then(response => {
+        console.log("Artist(s): " + artist + "\n");
         console.log("Venu: " + response.data[0].venue.name + "\n");
         console.log("Location: " + response.data[0].venue.city + "\n");
         console.log("Date: " + moment(response.data[0].datetime).format("MM-DD-YYYY") + "\n");
@@ -55,7 +56,7 @@ function concert(input) {
             if (err) {
                 console.log(err);
             } else {
-                console.log("Concert Logged")
+                // console.log("Concert Logged")
             }
         })
     }).catch(error => {
@@ -93,7 +94,7 @@ function spawtify(input) {
             if (err) {
                 console.log(err)
             } else {
-                console.log("Spotify Logged");
+                // console.log("Spotify Logged");
             }
         })
     })
@@ -135,7 +136,7 @@ function movie(input) {
             if (err) {
                 console.log(err)
             } else {
-                console.log("Movie Logged")
+                // console.log("Movie Logged")
             }
         })
     }).catch(error => {
