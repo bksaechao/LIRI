@@ -1,5 +1,5 @@
 # LIRI
-<p>LIRI is a SIRI inspired bot that pulls data from multiple libraries and provides it to the user based on their command and input. While SIRI interprets voice commands, LIRI interprets text provided by the user in the node terminal. Unfortunately since this is a command line application it cannot be easily shared for other users.</p>
+<p>LIRI is a SIRI inspired bot that pulls data from multiple libraries and provides it to the user based on their command and input. While SIRI interprets voice commands, LIRI interprets text provided by the user in the node terminal. Unfortunately this application cannot be deployed for easy access and requires a bit of set up on the users end. The following notes will guide users in the right direction towards successfully running this application.</p>
 <img src="images/liriIntro.gif" alt="liriGif" height="200" width="400">
 
 # How to use it
