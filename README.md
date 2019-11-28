@@ -19,11 +19,11 @@
 <p>LIRI can take in one of four commands in the node terminal:</p>
 
 *(The following images show how to input the commands in the command line and the information that will be displayed)*
-1. concert-this
-  * <img src="images/concert-command.png" alt="conCom" height="100" width ="200">
+1. concert-this <br>
+  <img src="images/concert-command.png" alt="conCom" height="100" width ="200">
 1. spotify-this-song
   * (see GIF above)
-1. movie-this
-  * <img src="images/movie-command.png" alt="movCom" height="200" width ="800">
-1. do-what-it-says
-  * <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
+1. movie-this <br>
+  <img src="images/movie-command.png" alt="movCom" height="200" width ="800">
+1. do-what-it-says <br>
+  <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
