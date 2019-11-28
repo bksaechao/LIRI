@@ -11,5 +11,6 @@
   <li>Once logged in, navigate to https://developer.spotify.com/my-applications/#!/applications/create to register a new application to be used with the Spotify API. You can fill in whatever you'd like for these fields. When finished, click the "complete" button.
   <li>On the next screen, scroll down to where you see your client id and client secret. 
   <li>You will then need to create your own .env file within the application and include your developer credentials. replace asterisks in the image below with your own credentials.
+  <li>You will also need to run "npm i" without the quotes in the node terminal to install the required packages to properly run this app.
 </ol>
 <img src="images/envfile.png" alt="env" height="200" width="350">
