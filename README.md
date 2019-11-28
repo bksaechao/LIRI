@@ -27,3 +27,7 @@
   <img src="images/movie-command.png" alt="movCom" height="200" width ="800">
 1. do-what-it-says <br>
   <img src="images/random-command.png" alt="ranCom" height="150" width ="600">
+
+# Bonus
+<p>The GIF below deomnstrates the bonus challenge. When the movie command is called, the data is populated in the terminal while also logging the information in the log.txt file.</p>
+<img src="images/bonusdemo.gif" alt="bonusGif" height="200" width="500">

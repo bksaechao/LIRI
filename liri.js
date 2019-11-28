@@ -56,7 +56,7 @@ function concert(input) {
             if (err) {
                 console.log(err);
             } else {
-                // console.log("Concert Logged")
+                console.log("Concert Logged")
             }
         })
     }).catch(error => {
@@ -94,19 +94,20 @@ function spawtify(input) {
             if (err) {
                 console.log(err)
             } else {
-                // console.log("Spotify Logged");
+                console.log("Spotify Logged");
             }
         })
     })
 }
 
 function movie(input) {
-    var movieName = input
-    var queryURL = "http://www.omdbapi.com/?t=" + movieName + "&y=&plot=short&apikey=trilogy";
     // Defaults input to "Mr. Nobody."
-    if (!movieName) {
-        movieName = "Alita";
-    };
+    if (!input) {
+        input = "Mr. Nobody";
+    }
+
+    var queryURL = "http://www.omdbapi.com/?t=" + input + "&y=&plot=short&apikey=trilogy";
+    // Defaults input to "Mr. Nobody."
 
     // Grabbing data from OMDB API and displaying it on the node terminal
     axios.get(queryURL).then(response => {
@@ -136,7 +137,7 @@ function movie(input) {
             if (err) {
                 console.log(err)
             } else {
-                // console.log("Movie Logged")
+                console.log("Movie Logged")
             }
         })
     }).catch(error => {

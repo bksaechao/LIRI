@@ -1,5 +1,5 @@
 ======Concert Start======
-Artist(s): rini
+Artist(s): RINI
 Venue: The Bowery Electric
 Location: New York
  Date: 12-08-2019
@@ -28,53 +28,48 @@ Artist(s): Backstreet Boys
 Song Title: I Want It That Way
 Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
 Album: The Hits--Chapter One
-======Spotify End============Concert Start======
-Artist(s): rini
-Venue: The Bowery Electric
-Location: New York
- Date: 12-08-2019
-======Concert End======
-
-======Movie Start======
-Title: Alita: Battle Angel
-Release Year: 2019
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 61%
-Country Produced: USA
-Language: English, Spanish
-Plot: A deactivated cyborg is revived, but cannot remember anything of her past life and goes on a quest to find out who she is.
-Actors: Rosa Salazar, Christoph Waltz, Jennifer Connelly, Mahershala Ali
-======Movie End======
-
-======Concert Start======
-Artist(s): rini
-Venue: The Bowery Electric
-Location: New York
- Date: 12-08-2019
-======Concert End======
-
-======Movie Start======
-Title: Alita: Battle Angel
-Release Year: 2019
-IMDB Rating: 7.4
-Rotten Tomatoes Rating: 61%
-Country Produced: USA
-Language: English, Spanish
-Plot: A deactivated cyborg is revived, but cannot remember anything of her past life and goes on a quest to find out who she is.
-Actors: Rosa Salazar, Christoph Waltz, Jennifer Connelly, Mahershala Ali
-======Movie End======
-
-======Spotify Start======
-Artist(s): Backstreet Boys
-Song Title: I Want It That Way
-Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
-Album: The Hits--Chapter One
 ======Spotify End======
 
+======Movie Start======
+Title: Mr. Nobody
+Release Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country Produced: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+======Movie End======
+
 ======Spotify Start======
-Artist(s): Backstreet Boys
-Song Title: I Want It That Way
-Preview Link: https://api.spotify.com/v1/tracks/6e40mgJiCid5HRAGrbpGA6
-Album: The Hits--Chapter One
+Artist(s): Harry Styles
+Song Title: Sign of the Times
+Preview Link: https://api.spotify.com/v1/tracks/5Ohxk2dO5COHF1krpoPigN
+Album: Harry Styles
+======Spotify End======
+
+======Concert Start======
+Artist(s): RINI
+Venue: The Bowery Electric
+Location: New York
+ Date: 12-08-2019
+======Concert End======
+
+======Movie Start======
+Title: Mr. Nobody
+Release Year: 2009
+IMDB Rating: 7.8
+Rotten Tomatoes Rating: 67%
+Country Produced: Belgium, Germany, Canada, France, USA, UK
+Language: English, Mohawk
+Plot: A boy stands on a station platform as a train is about to leave. Should he go with his mother or stay with his father? Infinite possibilities arise from this decision. As long as he doesn't choose, anything is possible.
+Actors: Jared Leto, Sarah Polley, Diane Kruger, Linh Dan Pham
+======Movie End======
+
+======Spotify Start======
+Artist(s): Harry Styles
+Song Title: Sign of the Times
+Preview Link: https://api.spotify.com/v1/tracks/5Ohxk2dO5COHF1krpoPigN
+Album: Harry Styles
 ======Spotify End======
 
