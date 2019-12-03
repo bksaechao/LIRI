@@ -12,7 +12,7 @@
   <li>On the next screen, scroll down to where you see your client id and client secret.
   <li>Clone this repository if you have not already done it.
   <li>You will then need to create your own .env file within the application and include your developer credentials. replace asterisks in the image below with your own credentials.
-  <li>You will also need to run "npm i" without the quotes in the node terminal to install the required packages to properly run this app.
+  <li>You will also need to run "npm i" without the quotes in the node terminal to install the required packages to properly run this app. Make sure you are in the LIRI file before running "npm i." If you are not, change directory into the LIRI file by typing cd + file name in the terminal.
 </ol>
 <img src="images/envfile.png" alt="env" height="200" width="350">
 
@@ -35,7 +35,7 @@
   <p>This command is set to read the command defined in the random.txt file. By changing the command name and the arist/movie/song, the user can change what this command will output.</p>
 
 # Bonus
-<p>The GIF below demonstrates the bonus challenge. When the movie command is called, the data is populated in the terminal while also logging the information in the log.txt file.</p>
+<p>The GIF below demonstrates the bonus challenge. When the movie command is called, the data is populated in the terminal while also logging the information in the log.txt file. In this case, since no title is entered, it is defaulted to Mr. Nobody.</p>
 <img src="images/bonusdemo.gif" alt="bonusGif" height="200" width="500">
 
 # Technologies
